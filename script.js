@@ -207,6 +207,6 @@ let data=await response.json();
 const fromRate = data.rates[fromCurr.value];
 const toRate = data.rates[toCurr.value];
 const convertedAmount = (amtVal / fromRate) * toRate;
-//console.log(`Converted Amount: ${convertedAmount.toFixed(2)}`);
+console.log(`Converted Amount: ${convertedAmount.toFixed(2)}`);
 msg.innerText = `${amtVal} ${fromCurr.value} = ${convertedAmount} ${toCurr.value}`;
 })
